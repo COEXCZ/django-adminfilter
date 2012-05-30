@@ -10,8 +10,7 @@ Requirements:
     Django 1.3
     django-mptt
 
-#. settings.py
-
+#. settings.py:
         TEMPLATE_CONTEXT_PROCESSORS + = (
             'adminfilter.context_processors.filter_context_processor'
         )
@@ -29,13 +28,13 @@ Requirements:
     (there is only one </form> tag in the template)
     If the template directory or folder in the project
     does not exist create it and copy original file from
-    django source contrib/admin/templates/change_list.html.
+    django source contrib/admin/templates/change_list.html:
 
         {% include "includes/filter_form_hidden.html" %}
         </ form>
 
 
-#. forms.py
+#. forms.py:
         import adminfilter
 
         ProductFilterForm class (adminfilter.FilterForm):
@@ -72,7 +71,7 @@ Requirements:
 
 
 #. admin.py
-    Change admin inheration class to FilterAdmin and set
+    Change admin inheration class to FilterAdmin and set:
 
         from adminfilter import FilterAdmin
         import project.product.forms ProductFilterForm
