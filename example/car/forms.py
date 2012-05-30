@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 from django.db.models.fields import BLANK_CHOICE_DASH
 
-from project.modules import adminfilter
+import adminfilter
 
 from choices import BRANDS, COLORS, FUEL_TYPES
 import query
+
 
 class CarFilterForm(adminfilter.FilterForm):
     """ Car FilterForm for admin """
