@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.contrib import admin
 
-from project.modules.adminfilter import FilterAdmin
+from adminfilter import FilterAdmin
 
 from models import Car
 from forms import CarFilterForm
