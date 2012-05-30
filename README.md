@@ -42,7 +42,7 @@ Parameter 'q' should contain name of the model attribute, where q='gender' q='ci
 Another option is giving django.db.models.Q object to 'q' parameter:
 
             def custom_query(value):
-                return Q(pub_date = value) | Q(pub_date=date(2005, 5, 6))
+                return Q(pub_date=value) | Q(pub_date=date(2005, 5, 6))
 
 The query looks like this:
 
