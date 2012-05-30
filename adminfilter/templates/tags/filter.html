@@ -1,0 +1,56 @@
+{# kate: hl Django HTML Template ; #}{% load i18n filter_tags %}
+<fieldset class="module adminfilter">
+    <h2 class="collapse-handler">{% trans "Filter" %}</h2>
+    <form action="." method="get">
+        <!-- form.visible_filter_fieds|humanized_ul:4 -->
+        <table class="cx-tbl-fullwidth cx-tbl-filter">
+            <tbody>
+            {% for bf in form.visible_filter_fields|humanized_ul:2 %}
+                <tr>
+                    {% for cell in bf %}
+                    <td>
+                        {{ cell.label_tag }}
+                    </td>
+                    <td>
+                        {{ cell }}
+                    </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            </tbody>
+            {% for bf in form.hidden_fields %}{{ bf }}{% endfor %}
+        </table>
+        <div class="adminfilter-bottom">
+            <button type="submit">{% trans "Filter" %}</button>
+            <button type="reset" onclick="location.href='./';">{% trans "Reset" %}</button>
+        </div>
+    </form>
+</fieldset>
+<script type="text/javascript">
+    django.jQuery(function() {
+        grappelli.initDateAndTimePicker()
+    });
+</script>
+<br class="clear" />
+<br class="clear" />
+
+
+
+<!--<div class="row cells-4 cells">
+    <div class="cell">
+        <div class="column span-4"></div>
+        <div class="column span-flexible"></div>
+    </div>
+    <div class="cell">
+        <div class="column span-4"></div>
+        <div class="column span-flexible"></div>
+    </div>
+    <div class="cell">
+        <div class="column span-4"></div>
+        <div class="column span-flexible"></div>
+    </div>
+    <div class="cell">
+        <div class="column span-4"></div>
+        <div class="column span-flexible"></div>
+    </div>
+</div>-->

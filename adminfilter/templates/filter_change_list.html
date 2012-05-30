@@ -1,0 +1,10 @@
+{% extends "admin/change_list.html" %}
+
+<!-- LOADING -->
+{% load filter_tags %}
+
+<!-- CONTENT -->
+{% block content %}
+    {% filter_form %}
+    {{ block.super }}
+{% endblock %}

@@ -1,0 +1,5 @@
+{% with filter_form.hidden_form as filter_form_hidden %}
+    {% for field in filter_form_hidden.all_fields %}
+        {{ field }}
+    {% endfor %}
+{% endwith %}

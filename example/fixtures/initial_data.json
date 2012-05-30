@@ -1,0 +1,53 @@
+[
+    {
+        "pk": 1,
+        "model": "car.car",
+        "fields": {
+            "model_year": 1999,
+            "name": "320D",
+            "fuel_type": "",
+            "color": "black",
+            "price": 23000,
+            "interior_color": "",
+            "crashed": false,
+            "notes": "",
+            "doors": 4,
+            "kms_done": 215000,
+            "brand": "bmw"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "car.car",
+        "fields": {
+            "model_year": 2010,
+            "name": "F800",
+            "fuel_type": "benzin",
+            "color": "white",
+            "price": 99000,
+            "interior_color": "",
+            "crashed": true,
+            "notes": "",
+            "doors": 4,
+            "kms_done": 5000,
+            "brand": "mercedes"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "car.car",
+        "fields": {
+            "model_year": 1995,
+            "name": "Clio",
+            "fuel_type": "",
+            "color": "",
+            "price": 5000,
+            "interior_color": "",
+            "crashed": false,
+            "notes": "",
+            "doors": null,
+            "kms_done": 10000,
+            "brand": "renault"
+        }
+    }
+]

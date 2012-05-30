@@ -1,0 +1,3 @@
+db.sql
+*.pyc
+settings.py
