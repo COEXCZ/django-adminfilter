@@ -5,7 +5,7 @@ The Django Admin Filter is a module for creating advanced filters in
 Django Admin.
 
 Installation and usage
-======================
+----------------------
 Requirements:
 
 *    Django 1.3
