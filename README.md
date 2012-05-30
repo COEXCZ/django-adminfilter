@@ -34,18 +34,18 @@ The next step is to add the following line to the directory
             gender = admin_filter.ChoiceField(q='gender', choices=choices.GENDERS)
             city =  admin_filter.ChoiceField(q='feelings', choices=choices.CITY)
 
-Parameter 'q' should contain name of the model attribute, where q='gender' q='city' creates the following query
+Parameter 'q' should contain name of the model attribute, where q='gender' q='city' creates the following query:
 
             Product.objects.filter(gender=value, city=value)
 
-another option is giving django.db.models.Q object to 'q' parameter:
+Another option is giving django.db.models.Q object to 'q' parameter:
 
             def custom_query (value):
-                return Q(pub_date = value) | Q (pub_date = date (2005, 5, 6))
+                return Q(pub_date = value) | Q(pub_date = date (2005, 5, 6))
 
 the query looks like this
             Product.objects.filter(
-                Q(pub_date=value) | Q (pub_date=date(2005, 5, 6))
+                Q(pub_date=value) | Q(pub_date=date(2005, 5, 6))
             )
 
 List of available form fields:
