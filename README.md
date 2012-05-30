@@ -2,7 +2,7 @@ django-adminfilter
 ==================
 
 The Django Admin Filter is a module for creating advanced filters in
-Django Admin application changelist.
+Django Admin.
 
 Installation and usage
 ======================
@@ -22,9 +22,6 @@ Requirements:
 The next step is to add the following line to the directory
 'templates/admin/change_list.html' before the end tag </ form>
 (there is only one </form> tag in the template)
-If the template directory or folder in the project
-does not exist create it and copy original file from
-django source contrib/admin/templates/change_list.html
 
         {% include "includes/filter_form_hidden.html" %}
         </ form>
