@@ -31,6 +31,7 @@ The next step is to add the following line to the directory
 
         ProductFilterForm class (adminfilter.FilterForm):
             """Product FilterForm for admin"""
+
             gender = admin_filter.ChoiceField(q='gender', choices=choices.GENDERS)
             city =  admin_filter.ChoiceField(q='feelings', choices=choices.CITY)
 
@@ -67,7 +68,6 @@ Change admin class to FilterAdmin:
         from adminfilter import FilterAdmin
 
         import project.product.forms ProductFilterForm
-
 
         class ProductAdmin(FilterAdmin):
             """
