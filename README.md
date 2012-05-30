@@ -40,10 +40,11 @@ Parameter 'q' should contain name of the model attribute, where q='gender' q='ci
 
 Another option is giving django.db.models.Q object to 'q' parameter:
 
-            def custom_query (value):
-                return Q(pub_date = value) | Q(pub_date = date (2005, 5, 6))
+            def custom_query(value):
+                return Q(pub_date = value) | Q(pub_date=date(2005, 5, 6))
 
-the query looks like this
+The query looks like this:
+
             Product.objects.filter(
                 Q(pub_date=value) | Q(pub_date=date(2005, 5, 6))
             )
@@ -66,6 +67,7 @@ Change admin class to FilterAdmin:
         from adminfilter import FilterAdmin
 
         import project.product.forms ProductFilterForm
+
 
         class ProductAdmin(FilterAdmin):
             """
