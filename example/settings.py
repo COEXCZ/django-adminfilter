@@ -117,7 +117,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "adminfilter.context_processors.filter_context_processor",
 )
 
-ROOT_URLCONF = 'project.urls'
+ROOT_URLCONF = 'example.urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -137,7 +137,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
 
     'adminfilter',
-    'project.car',
+    'example.car',
 )
 
 # A sample logging configuration. The only tangible logging
