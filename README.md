@@ -6,10 +6,12 @@ Django Admin.
 
 Demo
 ----
+[adminfilter.coex.cz](http://adminfilter.coex.cz/)
 
 Login: demo
+
 Password: demo
-[adminfilter.coex.cz](http://adminfilter.coex.cz/)
+
 
 Installation and usage
 ----------------------
