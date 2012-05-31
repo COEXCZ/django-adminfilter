@@ -6,6 +6,7 @@ Django Admin.
 
 Demo
 ----
+
 Login: demo
 Password: demo
 [adminfilter.coex.cz](http://adminfilter.coex.cz/)
@@ -84,6 +85,7 @@ Change admin class to FilterAdmin:
 
 About us
 --------
+
 [COEX](http://www.coex-webdesign.com/) is small-sized company. We have been
 creating custom webs and online applications since 2002. We communicate with
 our clients in a way so that our solutions would be reasonable, provide
