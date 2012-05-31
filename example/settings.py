@@ -115,6 +115,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.contrib.messages.context_processors.messages",
 
     "adminfilter.context_processors.filter_context_processor",
+    
+    "example.core.context_processors.global_vars",
 )
 
 ROOT_URLCONF = 'example.urls'
@@ -171,6 +173,8 @@ LOGGING = {
 FIXTURE_DIRS = (
     PATH_TO_WORKDIR + 'fixtures/',
 )
+
+ENABLE_GA_TRACKING = False
 
 try:
     from settings_local import *
