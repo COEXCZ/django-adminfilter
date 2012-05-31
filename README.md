@@ -6,6 +6,8 @@ Django Admin.
 
 Demo
 ----
+Login: demo
+Password: demo
 [adminfilter.coex.cz](http://adminfilter.coex.cz/)
 
 Installation and usage
