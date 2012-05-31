@@ -15,6 +15,7 @@ urlpatterns = patterns('',
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
+    url(r'^admin/password_change/$',  'django.views.defaults.page_not_found'),
     url(r'^admin/', include(admin.site.urls)),
 )
 
