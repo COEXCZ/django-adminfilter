@@ -138,6 +138,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
 
     'adminfilter',
+    'example.core',
     'example.car',
 )
 
