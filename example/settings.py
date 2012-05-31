@@ -120,6 +120,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 ROOT_URLCONF = 'example.urls'
 
 TEMPLATE_DIRS = (
+    PATH_TO_WORKDIR + 'templates/',
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -169,3 +170,8 @@ LOGGING = {
 FIXTURE_DIRS = (
     PATH_TO_WORKDIR + 'fixtures/',
 )
+
+try:
+    from settings_local import *
+except ImportError:
+    pass
