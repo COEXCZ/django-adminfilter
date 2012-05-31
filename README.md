@@ -6,7 +6,7 @@ Django Admin.
 
 Demo
 ----
-[adminfilter.coex.cz](http://adminfilter.coex.cz/)
+[adminfilter.coex.cz](http://adminfilter.coex.cz/admin/)
 
 Login: demo
 
