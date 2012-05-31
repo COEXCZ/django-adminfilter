@@ -4,6 +4,10 @@ django-adminfilter
 The Django Admin Filter is a module for creating advanced filters in
 Django Admin.
 
+Demo
+----
+[adminfilter.coex.cz](http://adminfilter.coex.cz/)
+
 Installation and usage
 ----------------------
 Requirements:
@@ -74,3 +78,12 @@ Change admin class to FilterAdmin:
                 Administration of Product Model
             """
             filter_form = ProductFilterForm
+
+
+About us
+--------
+[COEX](http://www.coex-webdesign.com/) is small-sized company. We have been
+creating custom webs and online applications since 2002. We communicate with
+our clients in a way so that our solutions would be reasonable, provide
+optimum service under the given circumstances and serve their purpose in
+the long term.
